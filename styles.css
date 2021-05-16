@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat Alternates', sans-serif; */
+:root {
+  /* primary */
+  --cl-primary-1: hsla(205, 86%, 17%, 0.3);
+  --cl-primary-2: hsla(205, 75%, 29%, 0.3);
+  --cl-primary-3: hsl(207, 10%, 65%);
+
+  --text-color: rgb(240, 248, 255);
+  --gold: rgba(255, 217, 0, 0.898);
+  --max-width: 1170px;
+
+  /* TRANSISITON */
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+}
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: var(--cl-primary-3);
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+.menu {
+  padding: 5rem 0;
+}
+
+.title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.line {
+  width: 15rem;
+  height: 0.15rem;
+  background: var(--gold);
+  margin: 1rem auto;
+}
+.btn-section {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-filter {
+  border: transparent;
+  border-radius: 10px;
+  color: var(--gold);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  letter-spacing: 0.23rem;
+  margin: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.btn-filter:hover {
+  background-color: var(--gold);
+  color: var(--text-color);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+}
+.photo {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: 0.25rem solid var(--gold);
+}
+.menu-info h4 {
+  text-transform: capitalize;
+}
+
+.price {
+  letter-spacing: 0.25rem;
+  color: var(--gold);
+}
+.title-header {
+  letter-spacing: 0.25rem;
+}
+.menu-item {
+  display: block;
+  width: 25rem;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+
+.menu-item:hover {
+  background-color: var(--cl-primary-1);
+  margin-bottom: 1rem;
+}
+.item-text {
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 776px) {
+  .section-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-item {
+    flex: 0 0 calc(50% -1rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-item {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+}
